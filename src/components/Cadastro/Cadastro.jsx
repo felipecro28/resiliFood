@@ -53,7 +53,7 @@ function cadastraUsuario(){
 }
 
 function post(){
-  fetch(VITE_POST_CLIENT, {
+  fetch(import.meta.env.VITE_POST_CLIENT, {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

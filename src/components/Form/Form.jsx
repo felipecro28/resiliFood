@@ -25,7 +25,7 @@ export default function Form() {
 
   useEffect(() => {
 
-    fetch(VITE_POST_CLIENT)
+    fetch(import.meta.env.VITE_POST_CLIENT)
     .then((res) => res.json())
     .then((res) => setUsuario([...res.clientes]) )
   }, [])

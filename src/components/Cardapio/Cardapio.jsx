@@ -20,7 +20,7 @@ export default function Cardapio() {
 
 
   useEffect(() => {
-    fetch(import.meta.env.VITE_API_LINK)
+    fetch(VITE_API_LINK)
     .then((res) => res.json())
     .then((res) => setCardapio(res.cardapio))
   }, [])

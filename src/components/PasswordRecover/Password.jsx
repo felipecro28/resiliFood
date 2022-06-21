@@ -32,7 +32,7 @@ export default function Password () {
 
     function trocaSenha () {
         if(password === confirmPassword && password.length > 3){
-        fetch(`${VITE_POST_CLIENT}/${userObj.id_cliente}`, {
+        fetch(`${import.meta.env.VITE_POST_CLIENT}/${userObj.id_cliente}`, {
             method: 'PATCH',
             headers: {
               'Content-Type': 'application/json',
